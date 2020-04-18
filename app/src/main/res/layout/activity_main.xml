@@ -6,49 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/getWeatherButton"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Find weather"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <WebView
         android:id="@+id/weatherWebView"
-        android:layout_width="228dp"
-        android:layout_height="410dp"
-        android:layout_marginTop="114dp"
+        android:layout_width="232dp"
+        android:layout_height="315dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/woeidTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="79dp"
-            android:layout_y="-17dp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/cityText"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_x="-4dp"
-            android:layout_y="-114dp" />
     </WebView>
 
     <TextView
         android:id="@+id/latTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="86dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -56,8 +30,25 @@
         android:id="@+id/lonTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/woeidTextView"
+        android:layout_width="116dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="121dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="187dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

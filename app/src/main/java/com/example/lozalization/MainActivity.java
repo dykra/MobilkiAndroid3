@@ -34,10 +34,10 @@ import java.net.URL;
 public class MainActivity extends AppCompatActivity {
 
 
-    private TextView cityTextView;
+//    private TextView cityTextView;
     private TextView latTextView;
     private TextView lonTextView;
-    private TextView woeidTextView;
+//    private TextView woeidTextView;
     private WebView weatherWebView;
 
 
@@ -57,14 +57,14 @@ public class MainActivity extends AppCompatActivity {
             MainActivity activity = mActivity.get();
             String lat = msg.getData().getString("lat");
             String lon = msg.getData().getString("lon");
-            String woeid = msg.getData().getString("woeid");
+//            String woeid = msg.getData().getString("woeid");
             String web = msg.getData().getString("web");
-            String city = msg.getData().getString("city");
+//            String city = msg.getData().getString("city");
             //referencje pobrane wcześniej w metodzie onCreate(...)
             activity.latTextView.setText(lat);
             activity.lonTextView.setText(lon);
-            activity.woeidTextView.setText(woeid);
-            activity.cityTextView.setText(city);
+//            activity.woeidTextView.setText(woeid);
+//            activity.cityTextView.setText(city);
             activity.weatherWebView.loadDataWithBaseURL(null, web, "text/html", "utf-8", null);
         }
     }
@@ -148,10 +148,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        cityTextView = (TextView) findViewById(R.id.cityText);
+//        cityTextView = (TextView) findViewById(R.id.cityText);
         latTextView = (TextView) findViewById(R.id.latTextView);
         lonTextView = (TextView) findViewById(R.id.lonTextView);
-        woeidTextView = (TextView) findViewById(R.id.woeidTextView);
+//        woeidTextView = (TextView) findViewById(R.id.woeidTextView);
         weatherWebView = (WebView) findViewById(R.id.weatherWebView);
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
